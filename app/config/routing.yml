@@ -1,0 +1,4 @@
+illtobby_user:
+    resource: "@illtobbyUserBundle/Resources/config/routing.yml"
+    prefix:   /
+

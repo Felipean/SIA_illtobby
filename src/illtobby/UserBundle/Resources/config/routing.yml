@@ -1,0 +1,29 @@
+illtobby_user_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: illtobbyUserBundle:Default:index }
+
+illtobby_user_index:
+    pattern:  /user/index
+    defaults: { _controller: illtobbyUserBundle:User:index }
+    
+illtobby_user_add: 
+     path:    /user/add
+     defaults: { _controller: illtobbyUserBundle:User:add }
+     
+illtobby_user_edit: 
+     path:    /user/edit/{id}
+     defaults: { _controller: illtobbyUserBundle:User:edit }
+
+illtobby_user_view: 
+     path:    /user/view/{id}
+     defaults: { _controller: illtobbyUserBundle:User:view }
+     
+illtobby_user_delete: 
+     path:    /user/delete/{id}
+     defaults: { _controller: illtobbyUserBundle:User:delete }
+    
+illtobby_user_articles: 
+     pattern:    /user/articles/{page}
+     defaults: {_controller: illtobbyUserBundle:User:articles, page: 1 }  
+     requirements: 
+         page: \d+

@@ -1,0 +1,7 @@
+parameters:
+#    illtobby_user.example.class: illtobby\UserBundle\Example
+
+services:
+#    illtobby_user.example:
+#        class: %illtobby_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
